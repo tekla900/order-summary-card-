@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --bck-clr: #E0E8FF;
+    --light-gray: #717FA6;
+    --black: #1F2E55;
+    --plan-background: #F7F9FF;
+    --blue: #382AE1;
+    --hover: #766CF1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bck-clr);
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+.bck-img, #illustration {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.bck-img {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ill {
+    background-image: url('./images/illustration-hero.svg');
+    height: 160px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card {
+    width: 327px;
+    height: 567px;
+    margin: 71px auto;
+    background-color: white;
+    box-shadow: 0px 40px 40px -20px #0D30BD27;
+    border-radius: 20px;
+}
+
+.flex {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 16px;
+    color: var(--black);
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.plan {
+    background-color: var(--plan-background);
+    display: flex;
+    width: 279px;
+    height: 81px;
+    border-radius: 11px;
+    justify-content: center;
+    align-items: center;
+    margin: 24px auto;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+h3 {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 900;
+}
+
+button {
+    height: 50px;
+    width: 279px;
+    border-radius: 11px;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 19.85px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: white;
+    margin-bottom: 17px;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+.cancel {
+    background-color: transparent;
+    color: var(--light-gray);
+    box-shadow: none;
+}
+
+a:hover {
+    color: var(--hover);
+    text-decoration: none;
+} 
+
+button:hover {
+    background-color: var(--hover);
+}
+
+.cancel:hover {
+    background-color: transparent;
+}
+p {
+    color: var(--light-gray);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+a {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        width: 450px;
+        height: 697px;
+        margin: 102px auto;
+    }
+    .ill {
+        height: 220px;
+        width: 450px;
+        background-size: cover;
+    }
+    h1 {
+        margin-bottom: 17px;
+        font-size: 28px;
+        line-height: 37.04px;
+    }
+    .flex {
+        width: 354px;
+        margin: 45px auto;
+    }
+    p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .plan {
+        width: 100%;
+        height: 98px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 40px 0 25px;
+    }
+    button {
+        width: 354px;
+        margin-bottom: 32px;
+    }
+    a {
+        font-size: 14px;
+    }
+    .price {
+        margin-right: 70px;
+        margin-left: 20px;
+    }
+    
+  }
